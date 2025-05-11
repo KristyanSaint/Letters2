@@ -59,7 +59,7 @@ const App = () => {
       </div>
 
       <button className="generate-btn" onClick={generateLetter}>
-        Generate Letter
+        Generate Letters
       </button>
     </div>
   );
