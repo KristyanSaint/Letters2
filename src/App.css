@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body, html { height: 100%; font-family: 'Poppins', sans-serif; }
+
+body {
+  background: linear-gradient(135deg, #fce4ec, #e1bee7);
+  display: flex; align-items: center; justify-content: center;
+}
+.app-container {
+  width: 100%; max-width: 400px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 20px; padding: 20px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.header-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 15px;   /* centers it horizontally */
+  display: block;
+}
+
+
+.app-title {
+  font-size: 2rem; color: #8e24aa; margin-bottom: 20px; font-weight:600;
+}
+
+/* Pop-in animation */
+@keyframes popIn {
+  0%   { opacity: 0; transform: scale(0.5); }
+  60%  { opacity: 1; transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+.pop-in {
+  animation: popIn 0.6s ease-out;
+}
+
+/* Letter wrapper to host the animation */
+.letter-wrapper {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Letter card styling */
+.letter-card {
+  background: white; margin: 12px 0; padding: 15px;
+  border-radius: 12px; box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  text-align: left;
+}
+.letter-card h3 {
+  color: #d81b60; margin-bottom: 8px; font-size: 1rem;
+}
+.letter-card p {
+  color: #444; line-height: 1.5; font-size:1rem;
+}
+
+/* Generate button */
+.generate-btn {
+  width: 100%; padding: 14px; margin-top: 20px;
+  font-size: 1rem; background: #ce93d8; border:none;
+  border-radius:12px; color:white; font-weight:500;
+  cursor: pointer; transition: transform 0.1s, background 0.2s;
+  font-weight: bold;
+}
+.generate-btn:hover {
+  background: #ba68c8; transform: translateY(-2px);
+}

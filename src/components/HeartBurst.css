@@ -1,0 +1,30 @@
+/* src/components/HeartBurst.css */
+.heart-burst {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  animation: heart-animation 2s ease-out infinite;
+}
+
+.heart {
+  font-size: 50px;
+  animation: heart-burst 1s ease-in-out infinite;
+}
+
+@keyframes heart-burst {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
